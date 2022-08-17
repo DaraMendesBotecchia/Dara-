@@ -9,6 +9,37 @@
         body{
         backgroud-color:#228B22;
         }
+              *{
+        margin: 0;
+        padding: 0;
+      }
+      img{
+        height: 500px;
+      }
+
+      .footer{
+        background-color: #fff;
+        position: absolute;
+        top: 1600px;
+      }
+      
+      @keyframes colors {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+      body{
+          background: linear-gradient(45deg,	#7adcf5,#d7eb81);
+          background-size: 300% 300%;
+          animation: colors 3s ease infinite;
+      }
     </style>
     
 </head>
