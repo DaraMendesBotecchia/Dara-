@@ -109,12 +109,14 @@ Agropecuária intensiva em mão de obra: assemelha-se à modalidade extensiva no
     
     
 <script>
-    var hora = new Date()
-    var data = hora.getHours()
-    
-    function carregar() {
-        document.getElementById('Horas') = hora
-    }
+    var dataAtual = new Date();
+    var dia = dataAtual.getDate();
+    var mes = (dataAtual.getMonth() + 1);
+    var ano = dataAtual.getFullYear();
+    var horas = dataAtual.getHours();
+    var minutos = dataAtual.getMinutes();
+    document.getElementById('Horas') = ("Hoje é dia " + dia + "/" + mes + " de " + ano + ". Agora são " + horas + ":" + minutos + "h.");
+    // saída: Hoje é dia 15/7 de 2020. Agora são 14:59h.
 </script>
 
 </body>
