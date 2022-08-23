@@ -214,7 +214,7 @@ body {
 }
       </style>
     <script>
-      (function(){
+     (function(){
 	var addEvent = function(object, type, callback) {
 	    if (object == null || typeof(object) == 'undefined') return;
 	    if (object.addEventListener) {
@@ -266,7 +266,7 @@ body {
 	function touchMove(){
 		// Initial container width
 		var containerWidth = $('.container').outerWidth();
-		document.addEventListener('mousemove', function(e) {
+		document.addEventListener('touchmove', function(e) {
 			$('.hover').css({
 				 left:  e.pageX
 			});
