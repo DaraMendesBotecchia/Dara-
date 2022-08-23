@@ -124,9 +124,10 @@ Agropecuária intensiva em mão de obra: assemelha-se à modalidade extensiva no
    
      function carregar() {
          
-     createElement('ol')
-        ol.setAttribute('id, sumario')
-        ol.appendChild('li')
+     const ol = document.createElement('ol')
+        ol.id = 'sumario'
+     
+     document.body.prepend(ol)
          
          li.setAttribute('a href',agro')
          
