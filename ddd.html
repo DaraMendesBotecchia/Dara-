@@ -12,5 +12,29 @@
 			<input type="button" id="procura" onclick="busca()" value="Buscar..."/>
 		</form>
 	<script src="ddd.js"> </script>
+		<style>
+			/* animação para webkit */
+@-webkit-keyframes fundocor {
+    0%   {background: orange;}
+    25%  {background: red;}
+    50%  {background: green;}
+    100% {background: blue;}
+}
+
+/* animação padrão */
+@keyframes fundocor {
+    0%   {background: orange;}
+    25%  {background: red;}
+    50%  {background: green;}
+    100% {background: blue;}
+}
+
+/* executa a chamada da animação no body */
+body{
+-webkit-animation: fundocor 5s linear 2s infinite alternate; /* chamada para Chrome, Safari, Opera */
+    animation: fundocor 5s linear 2s infinite alternate; /* chamada padrão */
+}
+
+		</style>
 	<body>
 </html>
